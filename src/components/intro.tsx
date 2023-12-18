@@ -24,7 +24,7 @@ export default function Intro() {
               height='192'
               quality='95'
               alt='Andrew Sanchez portrait'
-              className='h-24 w-24 rounded-full border-[0.35rem] border-white object-cover shadow-xl'
+              className='h-36 w-36 rounded-full border-[0.35rem] border-white object-cover shadow-xl'
               priority
             />
           </motion.div>
@@ -44,7 +44,7 @@ export default function Intro() {
         </div>
       </div>
 
-      <motion.p
+      <motion.h1
         className='mv-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl'
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
@@ -57,7 +57,7 @@ export default function Intro() {
           React (Next.js), Nodejs, Expressjs, Prisma, PostgreSQL,
         </span>{" "}
         and <span className='underline'>MongoDB</span>.
-      </motion.p>
+      </motion.h1>
 
       <motion.div
         className='flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium py-4'
