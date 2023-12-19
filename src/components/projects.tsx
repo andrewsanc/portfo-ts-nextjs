@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect } from "react";
+import React from "react";
 import { projectsData } from "@/lib/data";
 import SectionHeading from "./section-heading";
 import Project from "./project";
@@ -10,7 +10,7 @@ export default function Projects() {
   const { ref } = useSectionInView({ sectionName: "Projects", threshold: 0.5 });
 
   return (
-    <section id='projects' className='scroll-mt-28' ref={ref}>
+    <section id='projects' className='scroll-mt-28 mb-28' ref={ref}>
       <SectionHeading>My projects</SectionHeading>
       <div>
         {projectsData.map((project, index) => (

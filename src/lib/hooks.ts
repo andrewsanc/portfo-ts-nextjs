@@ -5,7 +5,7 @@ import type { SectionName } from "./types";
 
 interface useSectionInViewProps {
   sectionName: SectionName;
-  threshold: number;
+  threshold?: number;
 }
 
 export function useSectionInView(props: useSectionInViewProps) {
