@@ -2,9 +2,8 @@
 
 import React, { createContext, useContext, useState } from "react";
 
-import { links } from "@/lib/data";
+import type { SectionName } from "@/lib/types";
 
-type SectionName = (typeof links)[number]["name"];
 type ActiveSectionContextType = {
   activeSection: SectionName;
   setActiveSection: React.Dispatch<React.SetStateAction<SectionName>>;
