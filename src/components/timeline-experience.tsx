@@ -5,14 +5,12 @@ import { useInView } from "react-intersection-observer";
 import { VerticalTimelineElement } from "react-vertical-timeline-component";
 
 interface TimelineExperienceProps {
-  index: number;
   experience: Experience;
 }
 
 export default function TimelineExperience(props: TimelineExperienceProps) {
   const {
     experience: { icon, date, title, description, location },
-    index,
   } = props;
 
   const { ref, inView } = useInView({
@@ -20,7 +18,7 @@ export default function TimelineExperience(props: TimelineExperienceProps) {
   });
 
   return (
-    <div key={index} ref={ref} className='vertical-timeline-element'>
+    <div ref={ref} className='vertical-timeline-element'>
       <VerticalTimelineElement
         icon={icon}
         iconStyle={{

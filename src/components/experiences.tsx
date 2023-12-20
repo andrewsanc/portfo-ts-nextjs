@@ -17,7 +17,7 @@ export default function Experience() {
       <VerticalTimeline lineColor=''>
         {experiencesData.map((experience, index) => (
           <React.Fragment key={index}>
-            <TimelineExperience index={index} experience={experience} />
+            <TimelineExperience experience={experience} />
           </React.Fragment>
         ))}
       </VerticalTimeline>

@@ -3,7 +3,6 @@
 import { getErrorMessage, validateString } from "@/lib/utils";
 import { Resend } from "resend";
 import ContactFormEmail from "@/email/contact-form-email";
-import { renderAsync } from "@react-email/components";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
@@ -29,12 +28,10 @@ export async function sendEmail(formData: FormData) {
       to: "druu831@gmail.com",
       subject: "Message from Portfolio Form",
       reply_to: senderEmail as string,
-      react: await renderAsync(
-        ContactFormEmail({
-          message: message as string,
-          senderEmail: senderEmail as string,
-        })
-      ),
+      react: ContactFormEmail({
+        message: message as string,
+        senderEmail: senderEmail as string,
+      }),
     });
   } catch (error: unknown) {
     return {
