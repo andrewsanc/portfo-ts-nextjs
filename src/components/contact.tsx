@@ -40,12 +40,7 @@ export default function Contact() {
       <form
         className='mt-10 flex flex-col dark:text-black/70'
         action={async (formData) => {
-          const { error } = await sendEmail(formData);
-
-          if (error) {
-            toast.error(error);
-            return;
-          }
+          await sendEmail(formData);
 
           toast.success("Your message was sent successfully!");
         }}
