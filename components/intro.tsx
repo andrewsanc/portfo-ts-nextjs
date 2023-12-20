@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import portrait from "@/public/portrait.jpg";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { BsArrowRight, BsLinkedin } from "react-icons/bs";
@@ -23,7 +22,7 @@ export default function Intro() {
             transition={{ type: "tween", duration: "0.2" }}
           >
             <Image
-              src={portrait}
+              src='/portrait.jpg'
               width='192'
               height='192'
               quality='95'
