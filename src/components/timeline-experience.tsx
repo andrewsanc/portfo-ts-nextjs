@@ -18,7 +18,7 @@ export default function TimelineExperience(props: TimelineExperienceProps) {
     triggerOnce: true,
   });
 
-  const { theme, toggleTheme } = useTheme();
+  const { theme } = useTheme();
 
   return (
     <div ref={ref} className='vertical-timeline-element'>

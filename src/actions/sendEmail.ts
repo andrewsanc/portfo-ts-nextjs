@@ -42,5 +42,6 @@ export async function sendEmail(formData: FormData) {
 
   return {
     data,
+    error: false,
   };
 }
