@@ -8,8 +8,8 @@ import {
   Preview,
   Section,
   Text,
+  Tailwind,
 } from "@react-email/components";
-import { Tailwind } from "@react-email/tailwind";
 
 interface ContactFormEmailProps {
   message: string;
