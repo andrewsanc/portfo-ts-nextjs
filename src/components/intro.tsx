@@ -7,8 +7,7 @@ import Link from "next/link";
 import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
-import { useSectionInView } from "@/lib/hooks";
-import { useActiveSectionContext } from "@/context/active-section-context";
+import { useActiveSectionContext, useSectionInView } from "@/lib/hooks";
 
 export default function Intro() {
   const { ref } = useSectionInView({ sectionName: "Home", threshold: 0.3 });
@@ -82,20 +81,20 @@ export default function Intro() {
           <BsArrowRight className='opacity-70 group-hover:translate-x-2 transition' />
         </Link>
         <a
-          className='group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110  active:scale-105 transition borderBlack'
+          className='group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110  active:scale-105 transition borderBlack dark:bg-white/10 dark:text-white/60'
           href='https://drive.google.com/uc?export=download&id=1jclj03IxTEuqjIFCtaQxQ3M5P1HOO1u4'
         >
           Download CV{" "}
           <HiDownload className='opacity-60 group-hover:translate-y-2 transition' />
         </a>
         <a
-          className='bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full outline-none focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition borderBlack'
+          className='bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full outline-none focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition borderBlack dark:bg-white/10 dark:text-white/60'
           href='https://www.linkedin.com/in/andrewsanc/'
         >
           <BsLinkedin />
         </a>
         <a
-          className='bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full text-[1.35rem] outline-none focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition borderBlack'
+          className='bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full text-[1.35rem] outline-none focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition borderBlack dark:bg-white/10 dark:text-white/60'
           href='https://github.com/andrewsanc'
         >
           <FaGithubSquare />

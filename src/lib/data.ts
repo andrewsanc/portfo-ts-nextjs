@@ -54,7 +54,7 @@ export const experiencesData = [
     title: "Web Developer",
     location: "Monterey, CA",
     description:
-      "As a web developer, I provided consultation services to small businesses and worked with a team to enhance and revamp their online presence",
+      "As a web developer, I provided consultation services to small businesses and worked with a team to enhance and revamp their online presence.",
     icon: React.createElement(CgWorkAlt),
     date: "2018 - 2020",
   },

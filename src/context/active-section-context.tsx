@@ -15,9 +15,8 @@ interface ActiveSectionContextProviderProps {
   children: React.ReactNode;
 }
 
-const ActiveSectionContext = createContext<ActiveSectionContextType | null>(
-  null
-);
+export const ActiveSectionContext =
+  createContext<ActiveSectionContextType | null>(null);
 
 export default function ActiveSectionContextProvider(
   props: ActiveSectionContextProviderProps
@@ -38,16 +37,4 @@ export default function ActiveSectionContextProvider(
       {children}
     </ActiveSectionContext.Provider>
   );
-}
-
-// Hook used to return our context value
-export function useActiveSectionContext() {
-  const context = useContext(ActiveSectionContext);
-
-  if (context === null) {
-    throw new Error(
-      "useActiveSectionContext must be used with a ActiveSectionContextProvider"
-    );
-  }
-  return context;
 }
