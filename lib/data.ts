@@ -1,9 +1,10 @@
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
+import infoClockApp from "/public/clock-app.png";
+import devjobsApp from "/public/devjobs-app.png";
+import ipAddressTrackerApp from "/public/ip-address-tracker-app.png";
+import devfinderApp from "/public/dev-finder-app.png";
 
 export const links = [
   {
@@ -69,25 +70,41 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "Info Clock App",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: corpcommentImg,
+      "An app that seamlessly integrates the current time, inspirational quotes, and a 3-day weather forecast into a minimalist interface.",
+    tags: [
+      "JavaScript",
+      "React",
+      "API",
+      "CSS",
+      "Supabase",
+      "Authentication",
+      "Vite",
+      "Netlify",
+    ],
+    imageUrl: infoClockApp,
   },
   {
-    title: "rmtDev",
+    title: "Devjobs App",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: rmtdevImg,
+      "Devjobs is a web based job board for professional developers. Supported features like filtering and dark mode.",
+    tags: ["TypeScript", "React", "Next.js", "Tailwind", "Vercel"],
+    imageUrl: devjobsApp,
   },
   {
-    title: "Word Analytics",
+    title: "IP Address Tracker App",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: wordanalyticsImg,
+      "A public web app for finding information about the users ip-address or search for a particular ip-address.",
+    tags: ["JavaScript", "React", "API", "CSS", "Vite", "Netlify"],
+    imageUrl: ipAddressTrackerApp,
+  },
+  {
+    title: "Devfinder",
+    description:
+      "An application that provide users with an easy and efficient way to search for GitHub users and view their profile statistics.",
+    tags: ["JavaScript", "React", "API", "CSS", "Vite", "Netlify"],
+    imageUrl: devfinderApp,
   },
 ] as const;
 
