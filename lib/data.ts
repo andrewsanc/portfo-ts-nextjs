@@ -84,6 +84,7 @@ export const projectsData = [
       "Netlify",
     ],
     imageUrl: infoClockApp,
+    projectUrl: "https://poetic-tartufo-b20c77.netlify.app/",
   },
   {
     title: "Devjobs App",
@@ -91,6 +92,7 @@ export const projectsData = [
       "Devjobs is a web based job board for professional developers. Supported features like filtering and dark mode.",
     tags: ["TypeScript", "React", "Next.js", "Tailwind", "Vercel"],
     imageUrl: devjobsApp,
+    projectUrl: "https://devjobs-ts-nextjs.vercel.app/",
   },
   {
     title: "IP Address Tracker App",
@@ -98,6 +100,7 @@ export const projectsData = [
       "A public web app for finding information about the users ip-address or search for a particular ip-address.",
     tags: ["JavaScript", "React", "API", "CSS", "Vite", "Netlify"],
     imageUrl: ipAddressTrackerApp,
+    projectUrl: "https://ip-addresstracker-app.netlify.app/",
   },
   {
     title: "Devfinder",
@@ -105,14 +108,15 @@ export const projectsData = [
       "An application that provide users with an easy and efficient way to search for GitHub users and view their profile statistics.",
     tags: ["JavaScript", "React", "API", "CSS", "Vite", "Netlify"],
     imageUrl: devfinderApp,
+    projectUrl: "https://andrewsanc.github.io/github-user-search/",
   },
 ] as const;
 
 export const skillsData = [
-  "HTML",
-  "CSS",
   "JavaScript",
   "TypeScript",
+  "HTML",
+  "CSS",
   "React",
   "Next.js",
   "Node.js",
@@ -130,5 +134,6 @@ export const skillsData = [
   "Flask",
   "Django",
   "Framer Motion",
+  "CircleCi(Ci/Cd)",
   "Git",
 ] as const;
