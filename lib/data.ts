@@ -62,9 +62,9 @@ export const experiencesData = [
     title: "Computer Science Graduate",
     location: "Monterey, CA",
     description:
-      "I attend CSUMB and graduated with a Bachelor of Science in Computer Science.",
+      "I attend California State University, Monterey Bay and graduated with a Bachelor of Science in Computer Science.",
     icon: React.createElement(LuGraduationCap),
-    date: "2019",
+    date: "2018",
   },
 ] as const;
 
