@@ -81,7 +81,7 @@ export default function Intro() {
         </Link>
         <a
           className='group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110  active:scale-105 transition borderBlack dark:bg-white/10 dark:text-white/60'
-          href='https://drive.google.com/uc?export=download&id=1jclj03IxTEuqjIFCtaQxQ3M5P1HOO1u4'
+          href='https://drive.google.com/uc?export=download&id=1TXY6YIYa9CTADdaR5a6rLpDL2LVRA6VO'
         >
           Download CV{" "}
           <HiDownload className='opacity-60 group-hover:translate-y-2 transition' />
