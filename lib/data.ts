@@ -5,6 +5,7 @@ import infoClockApp from "/public/clock-app.png";
 import devjobsApp from "/public/devjobs-app.png";
 import ipAddressTrackerApp from "/public/ip-address-tracker-app.png";
 import devfinderApp from "/public/dev-finder-app.png";
+import pomodoroApp from "/public/pomodoro-app.png";
 
 export const links = [
   {
@@ -34,6 +35,13 @@ export const links = [
 ] as const;
 
 export const experiencesData = [
+  {
+    title: "Frontend Developer",
+    location: "Mechanicsburg, PA",
+    description: "In progress",
+    icon: React.createElement(CgWorkAlt),
+    date: "2024 - Present",
+  },
   {
     title: "Software Engineer III",
     location: "Remote",
@@ -69,6 +77,14 @@ export const experiencesData = [
 ] as const;
 
 export const projectsData = [
+  {
+    title: "Pomodoro",
+    description:
+      "Minimialist pomodoro timer app that allows you customize the pomodoro timers and theme.",
+    tags: ["TypeScript", "React", "Next.js", "Shadcn", "Tailwind"],
+    imageUrl: pomodoroApp,
+    projectUrl: "https://pomodoro-sepia-kappa.vercel.app/",
+  },
   {
     title: "Info Clock App",
     description:
